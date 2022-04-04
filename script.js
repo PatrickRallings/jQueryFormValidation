@@ -18,6 +18,6 @@ $("#submit").on("click", function () {
   }
   if (!$("label").hasClass("warning")) {
     $("form").remove();
-    $("h2").text("Thanks for your feedback!");
+    $("h2").html("<em>Thanks for your feedback!</em>");
   }
 });
