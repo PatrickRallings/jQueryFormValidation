@@ -11,13 +11,11 @@ $("#submit").on("click", function () {
       required[i].prev().addClass("warning");
     }
     if (!(required[i].val() === "")) {
-      $("label").on("click", function () {
-        $("p").text("");
-        required[i].prev().removeClass("warning");
-      });
+      $("p").text("");
+      $("p").removeClass("warning");
+      required[i].prev().removeClass("warning");
     }
   }
-
   if (!$("label").hasClass("warning")) {
     $("form").remove();
     $("h2").text("Thanks for your feedback!");
